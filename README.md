@@ -1,5 +1,6 @@
 # import-export-Zimbra
 Manual Backup in Zimbra Mail Server
+
 A. Backup all data from Old server
 - Login to the server with root
 - [root@zimbra]# su - zimbra
