@@ -1,7 +1,2 @@
-#=== Scrip domains (By Kamrang) =========================
-
-#=== Creat directory domains
-mkdir /opt/zimbra/backup/archives/export/domains
-
-#=== Find in mail server
+#=== Scrip find all domains (By Kamrang) =========================
 zmprov gad > domains.txt
