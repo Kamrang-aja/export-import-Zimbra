@@ -10,9 +10,11 @@ A. Backup all data from Old server
 - [root@zimbra ~]$ mkdir archives
 - [root@zimbra ~]$ mkdir archives/export
 - [root@zimbra ~]$ mkdir archives/import
-
-2. Find all domains
 - [root@zimbra ~]$ cd /opt/zimbra/backup/archives/export
 - [root@zimbra export]$ mkdir admins alias distlist domains emails filters signaturs userdata userpass
+
+2. Find all domains
+- [root@zimbra ~]$ cd /opt/zimbra/backup/archives/export/domains
+- [root@zimbra domains]$ mkdir 
 
 B. Restore in new server
