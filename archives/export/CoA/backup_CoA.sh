@@ -7,7 +7,6 @@
 # the end. Zimbra only detect users that are not in the default COS. Thus, every non detected user is in the default COS. 
 
 #=== Scrip backup all CoA in mail server =========================
-
 mkdir /tmp/cos_users
 IFS=$'\n'
 source ~/bin/zmshutil; zmsetvars
