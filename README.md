@@ -21,5 +21,5 @@ B. New mail servers (Server B) <-- Import
    - chmot +x restor_alias.sh
 
 == REFERENCE ===
-1. https://wiki.zimbra.com/wiki/How_to_merge_two_independent_ZCS_servers_into_one
-2. https://www.habibza.in/zimbra-open-source-server-migration-and-account-transfer/
+- https://wiki.zimbra.com/wiki/How_to_merge_two_independent_ZCS_servers_into_one
+- https://www.habibza.in/zimbra-open-source-server-migration-and-account-transfer/
