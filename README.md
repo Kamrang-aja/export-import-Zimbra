@@ -1,20 +1,20 @@
 # import-export-Zimbra
 Manual Backup in Zimbra Mail Server
 
-A. Backup all data from Old server
-- Login to the server with root
-- [root@zimbra]# su - zimbra
+A. Old mail servers (Server A) <-- Export
+  - Login to the server with root
+  - [root@zimbra]# su - zimbra
 
-1. Create a backup directory
-- [root@zimbra ~]$ cd /opt/zimbra/backup
-- [root@zimbra ~]$ mkdir archives
-- [root@zimbra ~]$ mkdir archives/export
-- [root@zimbra ~]$ mkdir archives/import
-- [root@zimbra ~]$ cd /opt/zimbra/backup/archives/export
-- [root@zimbra export]$ mkdir admins alias distlist domains emails filters signaturs userdata userpass
+1. Download and paste the "/archives/export/" directory into the Zimbra backup file.
+   - /opt/zimbra/backup.
+2. Set permissions for each backup and restore script.
+   - chmot +x backup_admins.sh
 
-2. Find all domains
-- [root@zimbra ~]$ cd /opt/zimbra/backup/archives/export/domains
-- [root@zimbra domains]$ mkdir 
+B. New mail servers (Server B) <-- Import
+  - Login to the server with root
+  - [root@zimbra]# su - zimbra
 
-B. Restore in new server
+1. Download and paste the "/archives/import/" directory into the Zimbra backup file.
+   - /opt/zimbra/backup
+2. Set permissions for each backup and restore script.
+   - chmot +x restor_alias.sh
