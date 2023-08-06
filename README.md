@@ -1,4 +1,4 @@
-# import-export-Zimbra
+# export-import-Zimbra
 
 === Manual Backup in Zimbra Mail Server ===
 
