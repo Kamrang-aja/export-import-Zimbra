@@ -1,5 +1,6 @@
 # import-export-Zimbra
-Manual Backup in Zimbra Mail Server
+
+=== Manual Backup in Zimbra Mail Server ===
 
 A. Old mail servers (Server A) <-- Export
   - Login to the server with root
@@ -18,3 +19,7 @@ B. New mail servers (Server B) <-- Import
    - /opt/zimbra/backup
 2. Set permissions for each backup and restore script.
    - chmot +x restor_alias.sh
+
+== REFERENCE ===
+https://wiki.zimbra.com/wiki/How_to_merge_two_independent_ZCS_servers_into_one
+https://www.habibza.in/zimbra-open-source-server-migration-and-account-transfer/
