@@ -6,7 +6,7 @@
 # Since the default and the default_external files will contain no users, their respective files are deleted at 
 # the end. Zimbra only detect users that are not in the default COS. Thus, every non detected user is in the default COS. 
 
-#=== Scrip backup all CoA in mail server =========================
+#=== Scrip backup all CoS in mail server =========================
 mkdir /tmp/cos_users
 IFS=$'\n'
 source ~/bin/zmshutil; zmsetvars
