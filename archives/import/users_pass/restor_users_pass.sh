@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #=== Scrip restort user & password in mail server =========================
-USERPASS="/opt/zimbra/backup/archives/import/userpass"
-USERDDATA="/opt/zimbra/backup/archives/import/userdata"
-USERS="/opt/zimbra/backup/archives/import/emails.txt"
+USERPASS="/archives/import/userpass"
+USERDDATA="/archives/import/userdata"
+USERS="/archives/import/emails.txt"
 for i in `cat $USERS`
 do
 givenName=$(grep givenName: $USERDDATA/$i.txt | cut -d ":" -f2)
