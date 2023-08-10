@@ -3,10 +3,10 @@
 # user to the COS. 
 
 #=== Scrip restort CoS in mail server =========================
-for cos in /opt/zimbra/backup/archives/export/cos_users/*
+for cos in `/bin/ls -1 /opt/zimbra/backup/archives/import/cos_users | tr " " "\n"`
 do
-   while read user; do
-      echo "zmprov sac $user" \"$(basename -- "$cos")\" >> /tmp/cos_users.prov
-   done <"$cos"
+	for i in `cat /opt/zimbra/backup/archives/import/cos_users/$cos`
+		do
+		zmprov sac $i $cos
+		done
 done
-zmprov < /tmp/cos_users.prov
