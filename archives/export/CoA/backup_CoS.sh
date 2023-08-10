@@ -13,9 +13,9 @@ for i in `zmprov gac`
    do
        id=`zmprov gc $i | grep -e "\bzimbraId\b"|cut -d " " -f 2`
 
-       ldapsearch -x -H $ldap_master_url -D $zimbra_ldap_userdn -w $zimbra_ldap_password| grep -e $id -e "dn: uid=" -e mail:|grep -v Email| grep -e zimbraCOSId -B1 -A1|grep mail|awk '{print $2}' > /opt/zimbra/backup/archives/export/cos_users/$i
+       ldapsearch -x -H $ldap_master_url -D $zimbra_ldap_userdn -w $zimbra_ldap_password| grep -e $id -e "dn: uid=" -e mail:|grep -v Email| grep -e zimbraCOSId -B1 -A1|grep mail|awk '{print $2}' > /archives/export/cos_users/$i
 
-/bin/rm -rf /opt/zimbra/backup/archives/export/cos_users/default*
+/bin/rm -rf /archives/export/cos_users/default*
 
 done
 
